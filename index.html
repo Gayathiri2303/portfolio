@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Gayathiri R — Data Science & AI/ML Engineer. Mathematics graduate building and deploying practical data, machine learning, and AI applications." />
+  <meta name="author" content="Gayathiri R" />
+  <title>Gayathiri R | Data Science & AI/ML Engineer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Loader -->
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">GR</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <p class="loader-text"><span id="loader-percent">0</span>%</p>
+    </div>
+  </div>
+
+  <!-- Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Floating shapes -->
+  <div class="floating-shapes" aria-hidden="true">
+    <div class="shape shape-1"></div>
+    <div class="shape shape-2"></div>
+    <div class="shape shape-3"></div>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Gayathiri<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu">
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Open to opportunities</div>
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Gayathiri R</h1>
+      <h2 class="hero-title">Data Science & AI/ML Engineer</h2>
+      <p class="hero-desc">
+        Mathematics graduate who builds and deploys practical data, machine learning, and AI applications — from model training all the way to live web apps.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary magnetic">View Projects</a>
+        <a href="#contact" class="btn btn-outline magnetic">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Gayathiri2303" target="_blank" rel="noopener" class="magnetic" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/gayathiri23" target="_blank" rel="noopener" class="magnetic" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:gayathirirajkumar95@gmail.com" class="magnetic" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About</span>
+        <h2 class="section-title">About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I’m a Mathematics graduate making the transition into Data Science and AI/ML engineering. My work centers on building complete applications — cleaning and analyzing data, training models, and then turning those models into usable web tools that people can actually interact with.
+          </p>
+          <p>
+            During a 3-month Data Science internship I developed and deployed real-world applications for property data, image processing, and AI-assisted inspection workflows. I prefer taking projects all the way to a live environment on Vercel rather than leaving them as notebooks. Earlier experience analyzing recruitment data in Excel also taught me the value of clear, structured reporting.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-rocket"></i>
+              <span>End-to-end: model → live app</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-eye"></i>
+              <span>Computer Vision + ML</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-cloud"></i>
+              <span>Deployed on Vercel</span>
+            </div>
+          </div>
+          <div class="about-info">
+            <div class="info-item"><i class="fas fa-map-marker-alt"></i><span>Nagercoil, Tamil Nadu</span></div>
+            <div class="info-item"><i class="fas fa-envelope"></i><span>gayathirirajkumar95@gmail.com</span></div>
+            <div class="info-item"><i class="fas fa-phone"></i><span>+91 78260 04824</span></div>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="stat-card">
+            <span class="stat-number" data-count="5">0</span>
+            <span class="stat-label">Projects Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Live Deployments</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="3">0</span>
+            <span class="stat-label">Months Internship</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-count="2">0</span>
+            <span class="stat-label">Diplomas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Skills</span>
+        <h2 class="section-title">Technical Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-code"></i></div>
+          <h3>Programming</h3>
+          <div class="skill-tags">
+            <span>Python</span><span>SQL</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Data Analysis & Visualization</h3>
+          <div class="skill-tags">
+            <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+            <span>Power BI</span><span>EDA</span><span>Statistical Analysis</span>
+            <span>Data Cleaning</span><span>Data Preprocessing</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-brain"></i></div>
+          <h3>Machine Learning & AI</h3>
+          <div class="skill-tags">
+            <span>Scikit-Learn</span><span>TensorFlow</span><span>Keras</span>
+            <span>Regression</span><span>Classification</span><span>K-Means Clustering</span>
+            <span>Feature Engineering</span><span>Predictive Modeling</span>
+            <span>Model Evaluation</span><span>Computer Vision</span><span>Image Processing</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <h3>Databases</h3>
+          <div class="skill-tags"><span>MySQL</span><span>MongoDB</span></div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-globe"></i></div>
+          <h3>Web Development</h3>
+          <div class="skill-tags"><span>Flask</span><span>FastAPI</span><span>HTML5</span><span>CSS3</span></div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-robot"></i></div>
+          <h3>Web Scraping & Automation</h3>
+          <div class="skill-tags">
+            <span>Playwright</span><span>Browser Automation</span>
+            <span>Data Extraction</span><span>API Integration</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <div class="skill-icon"><i class="fas fa-tools"></i></div>
+          <h3>Tools & Platforms</h3>
+          <div class="skill-tags">
+            <span>Git</span><span>GitHub</span><span>MS Excel</span><span>Kaggle</span>
+            <span>Linux/Terminal</span><span>Vercel</span><span>Application Deployment</span>
+            <span>Database Management</span><span>Dashboard Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Projects</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">Practical data and AI applications I built and deployed</p>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Real Estate AI - Featured -->
+        <article class="project-card featured">
+          <div class="project-badge">Featured</div>
+          <div class="project-image">
+            <img src="assets/projects/realestate-dashboard.png" alt="Real Estate AI Dashboard" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Gayathiri2303/Real_Estate_AI" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://realestate.gayathiriportfolio.xyz" target="_blank" rel="noopener" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Real Estate AI</h3>
+            <p class="project-desc">
+              Real estate AI application combining machine learning-based property price prediction, property analytics, and AI-assisted image analysis. Includes image upload, mortgage calculation, voice search, and property information workflows. Deployed as a live web application on Vercel.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Machine Learning</span><span>Computer Vision</span><span>Flask</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI Property Inspection - Featured -->
+        <article class="project-card featured">
+          <div class="project-badge">Featured</div>
+          <div class="project-image">
+            <img src="assets/projects/ai-property-1.png" alt="AI Property Inspection" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Gayathiri2303/AI-Property-Inspection" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://log2.gayathiriportfolio.xyz" target="_blank" rel="noopener" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">AI Property Inspection</h3>
+            <p class="project-desc">
+              AI-assisted property inspection web application for property image processing, address verification, and structured inspection workflows. Implemented image upload, AI-assisted image analysis, and property information processing. Deployed as a live web application on Vercel.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Computer Vision</span><span>Image Processing</span><span>Flask</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Stock Scanner -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/stock-scanner.png" alt="Stock Scanner Dashboard" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Gayathiri2303/Stock-Scanner" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://stockscanner.gayathiriportfolio.xyz" target="_blank" rel="noopener" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Stock Scanner</h3>
+            <p class="project-desc">
+              Flask-based stock scanner that automatically collects market data and screens stocks using rule-based filters on price range, prediction score, and analyst rating. Includes an investment recommendation API with live USD-INR conversion, tax and fee calculations. Deployed on Vercel.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>SQL</span><span>Automation</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- House Price Prediction -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/houseprice-comparison.png" alt="House Price Prediction Model Comparison" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Gayathiri2303/house_price_prediction" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">House Price Prediction</h3>
+            <p class="project-desc">
+              Built and compared Linear Regression and Random Forest models to predict residential property prices on the Kaggle House Prices dataset (1,460 houses, 9 selected features). Random Forest selected as final model with R² of 0.8877 (vs 0.7907 for Linear Regression).
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Pandas</span><span>Scikit-Learn</span><span>Regression</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Power BI Dashboard -->
+        <article class="project-card">
+          <div class="project-image">
+            <img src="assets/projects/powerbi-dashboard.png" alt="Business Performance Analytics Dashboard" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/11ClqwQE-s8YzHtKhMxAIJe3PHhRh2T4L/view" target="_blank" rel="noopener" aria-label="View Dashboard"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Business Performance Analytics Dashboard</h3>
+            <p class="project-desc">
+              Interactive Power BI dashboard with KPI cards for Total Sales, Total Profit, Total Quantity, and Profit Margin. Includes donut chart for sales by category, bar chart for sales by region, and line chart for monthly sales trend. Designed with a professional dark theme.
+            </p>
+            <div class="project-tech">
+              <span>Power BI</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Experience</span>
+        <h2 class="section-title">Work Experience</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Jun 2026 – Sep 2026</span>
+            <h3>Data Science Intern</h3>
+            <h4>Schoenen DIS LLP, Nagercoil</h4>
+            <ul>
+              <li>Built and deployed real-world web applications for property data, image processing, and AI-assisted inspection workflows, taking each feature from development through live deployment on Vercel.</li>
+              <li>Owned debugging, data processing, and integration of AI/ML-oriented features end-to-end, translating manager requirements into working, deployed application logic.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <span class="timeline-date">Oct 2025 – Apr 2026</span>
+            <h3>HR Recruiter</h3>
+            <h4>Hindustan HR, Nagercoil</h4>
+            <ul>
+              <li>Maintained and analyzed recruitment data in MS Excel to track candidate pipelines end-to-end, preparing structured reports that informed hiring decisions.</li>
+              <li>Screened candidate profiles against role requirements using defined evaluation criteria, improving the consistency and speed of the recruitment workflow.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Education</span>
+        <h2 class="section-title">Education & Certifications</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+          <h3>B.Sc. Mathematics</h3>
+          <span class="edu-date">2022 – 2025</span>
+          <p>Probability & Statistics, Statistical Analysis, Linear Algebra, Data Modeling, Quantitative Analysis, Mathematical Optimization, Numerical Methods, Calculus</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Advanced Diploma in AI & Data Science (ADAD)</h3>
+          <span class="edu-date">Oct 2025</span>
+          <p>Python, MySQL, MongoDB, NumPy, Pandas, Matplotlib, Scikit-Learn, TensorFlow, Keras, Git</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <h3>Honours Diploma in Computer Applications (HDCA)</h3>
+          <span class="edu-date">Jan 2025</span>
+          <p>Python, C, C++, MySQL, HTML5, CSS3, MS Office, Internet Applications, Digital Marketing</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-certificate"></i></div>
+          <h3>GenAI Powered Data Analytics Job Simulation</h3>
+          <span class="edu-date">Jun 2026</span>
+          <p>Exploratory Data Analysis, Risk Profiling, AI-assisted Delinquency Prediction, Business Reporting, Data Storytelling, AI-driven Collections Strategy</p>
+        </div>
+        <div class="edu-card">
+          <div class="edu-icon"><i class="fas fa-keyboard"></i></div>
+          <h3>Senior Grade Typewriting – English</h3>
+          <span class="edu-date">Feb 2024</span>
+          <p>45 WPM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Open to Data Science and AI/ML opportunities</p>
+      </div>
+      <div class="contact-content">
+        <div class="contact-info">
+          <a href="mailto:gayathirirajkumar95@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <div><h4>Email</h4><p>gayathirirajkumar95@gmail.com</p></div>
+          </a>
+          <a href="https://linkedin.com/in/gayathiri23" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-linkedin-in"></i>
+            <div><h4>LinkedIn</h4><p>linkedin.com/in/gayathiri23</p></div>
+          </a>
+          <a href="https://github.com/Gayathiri2303" target="_blank" rel="noopener" class="contact-card">
+            <i class="fab fa-github"></i>
+            <div><h4>GitHub</h4><p>github.com/Gayathiri2303</p></div>
+          </a>
+          <div class="contact-card">
+            <i class="fas fa-map-marker-alt"></i>
+            <div><h4>Location</h4><p>Nagercoil, Tamil Nadu</p></div>
+          </div>
+          <div class="contact-card">
+            <i class="fas fa-phone"></i>
+            <div><h4>Phone</h4><p>+91 78260 04824</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 Gayathiri R. Built with focus on practical AI/ML applications.</p>
+      <div class="footer-socials">
+        <a href="https://github.com/Gayathiri2303" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/gayathiri23" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:gayathirirajkumar95@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
